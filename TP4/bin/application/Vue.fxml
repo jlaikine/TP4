@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="435.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController">
+   <children>
+      <ListView fx:id="list" layoutX="14.0" layoutY="14.0" onMouseClicked="#changeImage" prefHeight="312.0" prefWidth="172.0" />
+      <ImageView fx:id="imageView" fitHeight="312.0" fitWidth="523.0" layoutX="203.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="39.0" layoutY="339.0" prefHeight="26.0" prefWidth="80.0" text="Votre nom :" />
+      <Label layoutX="39.0" layoutY="378.0" prefHeight="26.0" prefWidth="80.0" text="Votre login :" />
+      <TextField fx:id="nom" layoutX="112.0" layoutY="340.0" />
+      <TextField fx:id="login" layoutX="112.0" layoutY="379.0" />
+      <Label layoutX="385.0" layoutY="339.0" prefHeight="26.0" prefWidth="115.0" text="Note de l'image /20 :" />
+      <TextField layoutX="507.0" layoutY="339.0" prefHeight="26.0" prefWidth="98.0" />
+      <Button layoutX="286.0" layoutY="378.0" mnemonicParsing="false" onAction="#identification" text="Valider" />
+      <Button layoutX="627.0" layoutY="340.0" mnemonicParsing="false" text="Valider" />
+   </children>
+</AnchorPane>
